@@ -12,13 +12,13 @@ presence.on("UpdateData", () => {
         largeImageKey: "logo"
 };
     if (document.location.hostname == "discordtrlist.xyz") {
-        presenceData.details = "Görültülenen sayfa:";
+        presenceData.details = "Görüntülenen sayfa:";
         presenceData.state = ('Anasayfa')
 if (document.location.pathname.includes("/api")) {
-          presenceData.details = "Görültülenen Sayfa:";
+          presenceData.details = "Görüntülenen Sayfa:";
           presenceData.state = ('Api sayfası')
 }else if (document.location.pathname.includes("/botlar")) {
-          presenceData.details = "Görültülenen Sayfa:";
+          presenceData.details = "Görüntülenen Sayfa:";
           presenceData.state = ('Bütün Botlar')
 
     } else if (document.location.pathname.includes("/profil/")) {
@@ -29,10 +29,10 @@ if (document.location.pathname.includes("/api")) {
             presenceData.state = profilename
         }
     } else if (document.location.pathname.includes("/botekle")) {
-            presenceData.details = "Görültülenen Sayfa:";    
+            presenceData.details = "Görüntülenen Sayfa:";    
             presenceData.state = "Bot ekleme sayfası";
     } else if (document.location.pathname.includes("/yetkili")) {
-            presenceData.details = "Görültülenen Sayfa:";    
+            presenceData.details = "Görüntülenen Sayfa:";    
             presenceData.state = "Yetkili paneli";
 
     }
